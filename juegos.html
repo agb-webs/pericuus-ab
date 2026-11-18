@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Ana Gutiérrez Barón"/>
+    <title>Pericuus_AB</title>
+    <link rel="icon" href="img/Logo.jpg" type="image/x-icon"> <!--Colocacion del logo en la pestaña del navegador-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/juegos.css">
+    <script type="text/javascript" src="js/juegos.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'> <!--Fuente para CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> <!--Iconos-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo.jpg" alt="Logo del canal" title="Logo del canal"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavaltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-item nav-link" href="juegos.html"><i class="fa-solid fa-gamepad"></i>Juegos Jugados</a></li>
+                        <li><a class="nav-item nav-link" href="blogs.html"><i class="fa-solid fa-video"></i>Blogs</a></li>
+                        <li><a class="nav-item nav-link" href="especiales.html"><i class="fa-solid fa-face-grin-stars"></i>Especiales</a></li>
+                        <li><a class="nav-item nav-link" href="eventos.html"><i class="fa-solid fa-ticket"></i>Eventos</a></li>
+                        <li><a class="nav-item nav-link" href="colaboraciones.html"><i class="fa-regular fa-handshake"></i>Colaboraciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="title-enroll">
+        <div class="jumbotrol">
+            <div class="container-fluid">
+                <h1>Juegos Jugados</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <nav class="col-12" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"></li>
+                </ol>
+            </nav>
+            <section class="col-12" id="botones">
+                <button type="button" class="btn btn-light opcion" id="todas" onclick="verTodas()">Todos</button>
+                <button type="button" class="btn btn-light opcion" id="nintendo" onclick="verNintendo()">Nintendo</button>
+                <button type="button" class="btn btn-light opcion" id="pc" onclick="verOrdenador()">Ordenador</button>
+                <button type="button" class="btn btn-light opcion" id="play" onclick="verPlay()">PlayStation</button>
+            <div class="row" id="lista-elementos">
+                <div class="col-md-12 col-xs-12 play"> <!--FNAF-->
+                    <h4>FNAF: SECRET OF THE MIMIC</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/fnaf.jpg" alt="Juego FNAF" title="Juego FNAF"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd8BFs9V5YufCwI9Hba7ThSh&si=hoanAKIQ9lv9eVLz" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Donkey Kong-->
+                    <h4>DONKEY KONG BANANZA</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/dk.jpg" alt="Juego Donkey Kong" title="Juego Donkey Kong"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-nub7HU718aA_dV4dI0qA3&si=4PST97Pil7W2yvzb" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Neva-->
+                    <h4>NEVA</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/neva.jpg" alt="Juego Neva" title="Juego Neva"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/DrVR9YyeXPk?si=vWjAw7kHcVPys9G7" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 pc"> <!--Dogwalk-->
+                    <h4>DOGWALK</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/dogwalk.jpg" alt="Juego Dogwalk" title="Juego Dogwalk"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/fE5nMpT3TwI?si=TbmTlOdWtTzGTwKP" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Hollow Knight-->
+                    <h4>HOLLOW KNIGHT</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/hk.jpg" alt="Juego Hollow Knight" title="Juego Hollow Knight"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd_2ElTINAjbhwo8mX4SW6so&si=8z7getPZUnxxLe89" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Mario Strikers-->
+                    <h4>MARIO STRIKERS GAMECUBE</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/mario-strikers.jpg" alt="Juego Mario Strikers" title="Juego Mario Strikers"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/47V2s03-nkQ?si=UpRNw0Qlgjyg_Vnr" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 pc"> <!--WaterPark Simulator-->
+                    <h4>WATERPARK SIMULATOR</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/wps.jpg" alt="Juego Waterpark Simulator" title="Juego Waterpark Simulator"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd9T67Nlqiw2Zumbc_KSelXw&si=adOpU2yTUX1nhGfC" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--Inazuma-->
+                    <h4>INAZUMA ELEVEN VICTORY ROAD</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/ie.jpg" alt="Juego Inazuma Eleven" title="Juego Inazuma Eleven"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd8T2twNq8teEWZo0WPWR0FN&si=0fydF6IFYMXrzpyb" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--Spiderman-->
+                    <h4>SPIDERMAN REMASTERED</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/spiderman.jpg" alt="Juego Spiderman" title="Juego Spiderman"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd_3oU7Eh2AiPR1t_EHwtkLU&si=6wUGYplUuCNx-yHa" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--The Last Of Us-->
+                    <h4>THE LAST OF US (SAGA)</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/tlou-saga.jpg" alt="Saga The Last of Us" title="Saga The Last of Us"/>
+                        </div>
+                        <br/>
+                        <div class="col-md-6 col-xs-12">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTLOF-1">
+                                <button type="button" class="btn btn-dark">The Last Of Us Parte I</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalTLOF-2">
+                                <button type="button" class="btn btn-dark">The Last Of Us Parte II</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--Expedition 33-->
+                    <h4>EXPEDITION 33</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/expedition.jpg" alt="Juego Expedition 33" title="Juego Expedition 33"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd9tpJ8_9hN231tZ62obVuXu&si=spHNFIS5dfrNgWyj" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Super Mario Galaxy 2-->
+                    <h4>SUPER MARIO GALAXY 2</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/super-mario.jpg" alt="Juego Super Mario Galaxy 2" title="Juego Super Mario Galaxy 2"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-owaym-ic9DkTHVDiYm5im&si=_UJ0D-H8l58kz6-b" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 pc"> <!--Dispatch-->
+                    <h4>DISPATCH</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/dispatch.png" alt="Juego Dispatch" title="Juego Dispatch"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-adCr0yVLdfgurd-paL-4g&si=1rUZVKr6hhl4sYni" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 pc"> <!--My Voice Zoo-->
+                    <h4>MY VOICE ZOO</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/zoo.jpg" alt="Juego My Voice Zoo" title="Juego My Voice Zoo"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/e749ZeKyZnI?si=Y1fMt13PSaXKaWGI" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Pokopia-->
+                    <h4>POKEMON POKOPIA</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/pokopia.jpeg" alt="Juego Pokemon Pokopia" title="Juego Pokemon Pokopia"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-PQRT8RS8G0Vd81UlwGjB1&si=iv9maPYPoOiQhOYV" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--Uncharted-->
+                    <h4>UNCHARTED (SAGA)</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/uncharted.jpg" alt="Saga Uncharted" title="Saga Uncharted"/>
+                        </div>
+                        <br/>
+                        <div class="col-md-6 col-xs-12">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalUn-1">
+                                <button type="button" class="btn btn-dark">Uncharted 1: Drake's Fortune</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalUn-2">
+                                <button type="button" class="btn btn-dark">Uncharted 2: Among Thieves</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalUn-3">
+                                <button type="button" class="btn btn-dark">Uncharted 3: Drake's Deception</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 play"> <!--God Of War-->
+                    <h4>GOD OF WAR (SAGA)</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/gow.jpg" alt="Saga GOW" title="Saga GOW"/>
+                        </div>
+                        <br/>
+                        <div class="col-md-6 col-xs-12">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGOW-1">
+                                <button type="button" class="btn btn-dark">God Of War I</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGOW-2">
+                                <button type="button" class="btn btn-dark">God Of War II</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGOW-3">
+                                <button type="button" class="btn btn-dark">God Of War III</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalGOW-4">
+                                <button type="button" class="btn btn-dark">God Of War (2018)</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Profesor Layton-->
+                    <h4>PROFESOR LAYTON (SAGA)</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/layton.jpg" alt="Saga Layton" title="Saga Layton"/>
+                        </div>
+                        <br/>
+                        <div class="col-md-6 col-xs-12">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-1">
+                                <button type="button" class="btn btn-dark">La Villa Misteriosa</button>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-2">
+                                <button type="button" class="btn btn-dark">La Caja de Pandora</button>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-3">
+                                <button type="button" class="btn btn-dark">El Futuro Perdido</button>
+                            </a>
+                            <br/>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-4">
+                                <button type="button" class="btn btn-dark">La llamada del espectro</button>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-5">
+                                <button type="button" class="btn btn-dark">La mascara de los prodigios</button>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalLay-6">
+                                <button type="button" class="btn btn-dark">El legado de los ashalanti</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Tomodachi-->
+                    <h4>TOMODACHI LIFE: UNA VIDA DE ENSUEÑO</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/tomodachi.jpeg" alt="Juego Tomodachi" title="Juego Tomodachi"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-PQRT8RS8G0Vd81UlwGjB1&si=iv9maPYPoOiQhOYV" target="_blank"> <!--Es el enlace del Pokopia, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Zelda-->
+                    <h4>THE LEGEND OF ZELDA: OCARINA OF TIME</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/zelda.jpg" alt="Juego Zelda" title="Juego Zelda"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-PQRT8RS8G0Vd81UlwGjB1&si=iv9maPYPoOiQhOYV" target="_blank"> <!--Es el enlace del Pokopia, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 pc"> <!--Kitty Powers-->
+                    <h4>KITTY POWERS' MATCHMAKER</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/kitty.jpeg" alt="Juego Kitty Powers' Matchmaker" title="Kitty Powers' Matchmaker"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-PQRT8RS8G0Vd81UlwGjB1&si=iv9maPYPoOiQhOYV" target="_blank"> <!--Es el enlace del Pokopia, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 nintendo"> <!--Another Crab's Treasure-->
+                    <h4>ANOTHER CRAB'S TREASURE</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/another-crabs.jpg" alt="Juego Another Crab's Treasure" title="Juego Another Crab's Treasure"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-PQRT8RS8G0Vd81UlwGjB1&si=iv9maPYPoOiQhOYV" target="_blank"> <!--Es el enlace del Pokopia, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="botones-paginacion"></div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="container-fluid">
+            <p> &copy; 2026 Pericuus_AB. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--Ventanas Modales-->
+
+    <div class="modal fade" id="modalTLOF-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>THE LAST OF US - PARTE 1</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/tlof1.jpeg" alt="Juego The Last of Us 1" title="Juego Juego The Last of Us 1"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-M3PVhteBFfkCjas7royMo&si=jnVlybVfAQ7yZ_E6" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTLOF-2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>THE LAST OF US - PARTE 2</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/tlof2.jpeg" alt="Juego The Last of Us 2" title="Juego The Last of Us 2"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtube.com/playlist?list=PLKWsxYB3vTd-RL1QBe_qJpEo5_KSBxINA&si=W8p-36b8a3AdIL6P" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalUn-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>UNCHARTED 1: DRAKE'S FORTUNE</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/un-1.jpg" alt="Juego Uncharted 1" title="Juego Uncharted 1"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>139</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalUn-2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>UNCHARTED 2: AMONG THIEVES</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/un-2.jpg" alt="Juego Uncharted 2" title="Juego Uncharted 2"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>129</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalUn-3">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>UNCHARTED 3: DRAKE'S DECEPTION</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/un-3.jpeg" alt="Juego Uncharted 3" title="Juego Uncharted 3"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>78</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGOW-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>GOD OF WAR (2005)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/gow-1.png" alt="Juego Gow of War 1" title="Juego Gow of War 1"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>89</p>
+                            <a href="https://youtu.be/LwhhEe7kx2Y?si=-grhojaFijdqnDNW" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGOW-2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>GOD OF WAR II: DIVINE RETRIBUTION</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/gow-2.jpeg" alt="Juego Gow of War 2" title="Juego Gow of War 2"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>80</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGOW-3">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>GOD OF WAR III</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/gow-3.jpg" alt="Juego Gow of War 3" title="Juego Gow of War 3"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>35</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGOW-4">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>GOD OF WAR (2018)</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/gow-4.jpg" alt="Juego Gow of War 4" title="Juego Gow of War 4"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <p><b>Contador de muertes total: </b>124</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLay-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y LA VILLA MISTERIOSA</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-1.jpg" alt="Juego Layton 1" title="Juego Layton 1"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/LwhhEe7kx2Y?si=-grhojaFijdqnDNW" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLay-2">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y LA CAJA DE PANDORA</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-2.jpeg" alt="Juego Layton 2" title="Juego Layton 2"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLay-3">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y EL FUTURO PERDIDO</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-3.jpg" alt="Juego Layton 3" title="Juego Layton 3"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLay-4">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y LA LLAMADA DEL ESPECTRO</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-4.jpeg" alt="Juego Layton 4" title="Juego Layton 4"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLay-5">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y LA MÁSCARA DE LOS PRODIGIOS</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-5.jpg" alt="Juego Layton 5" title="Juego Layton 5"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLay-6">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PROFESOR LAYTON Y EL LEGADO DE LOS ASHALANTI</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/juegos/sagas/lay-6.jpeg" alt="Juego Layton 6" title="Juego Layton 6"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui opinion de Peri sobre el juego)</p>
+                            <a href="https://youtu.be/FMyCvewIMZs?si=LJF-lBIc_Z5OhqZc" target="_blank"> <!--Es el enlace del Uncharted 1, cambiarlo cuando Peri lo suba-->
+                                <button type="button" class="btn btn-dark">Ver Gameplay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

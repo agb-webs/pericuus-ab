@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Ana Gutiérrez Barón"/>
+    <title>Pericuus_AB</title>
+    <link rel="icon" href="img/Logo.jpg" type="image/x-icon"> <!--Colocacion del logo en la pestaña del navegador-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/blogs.css">
+    <script type="text/javascript" src="js/blogs.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'> <!--Fuente para CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> <!--Iconos-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo.jpg" alt="Logo del canal" title="Logo del canal"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavaltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-item nav-link" href="juegos.html"><i class="fa-solid fa-gamepad"></i>Juegos Jugados</a></li>
+                        <li><a class="nav-item nav-link" href="blogs.html"><i class="fa-solid fa-video"></i>Blogs</a></li>
+                        <li><a class="nav-item nav-link" href="especiales.html"><i class="fa-solid fa-face-grin-stars"></i>Especiales</a></li>
+                        <li><a class="nav-item nav-link" href="eventos.html"><i class="fa-solid fa-ticket"></i>Eventos</a></li>
+                        <li><a class="nav-item nav-link" href="colaboraciones.html"><i class="fa-regular fa-handshake"></i>Colaboraciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="title-enroll">
+        <div class="jumbotrol">
+            <div class="container-fluid">
+                <h1>Videos Personales</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <nav class="col-12" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"></li>
+                </ol>
+            </nav>
+            <section class="col-12" id="botones">
+                <button type="button" class="btn btn-light opcion" id="todas" onclick="verTodas()">Todos</button>
+                <button type="button" class="btn btn-light opcion" id="blogs" onclick="verBlogs()">Blogs de Viajes o Sitios</button>
+                <button type="button" class="btn btn-light opcion" id="reviews" onclick="verReview()">Reviews</button>
+                <button type="button" class="btn btn-light opcion" id="resumenes" onclick="verResumenes()">Resumenes</button>
+            <div class="row" id="lista-elementos">
+                <div class="col-md-5 col-xs-12 blogs"> <!--Videos de Londres-->
+                    <h4>VIAJE A LONDRES</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/londres.jpg" alt="Londres" title="Londres"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtube.com/playlist?list=PL0AsMc2CYSYpawlfU55OWsAz-VSxSZCn0&si=9KAGZmpoWzKDG2iS" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Videos</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 blogs"> <!--Videos de Roma-->
+                    <h4>VIAJE A ROMA</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/roma.jpg" alt="Roma" title="Roma"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtube.com/playlist?list=PL0AsMc2CYSYpawlfU55OWsAz-VSxSZCn0&si=9KAGZmpoWzKDG2iS" target="_blank"> <!--Enlace a los blogs de Londres, cambiar cuando Peri los suba-->
+                                <button type="button" class="btn btn-dark">Ver Videos</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 blogs"> <!--Videos de Luces de Navidad 2025-->
+                    <h4>LUCES DE NAVIDAD 2025</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/luces-navidad.jpg" alt="Luces" title="Luces"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtu.be/20qpl0iizXI?si=MiMDN7WTuaiuDUH5" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Video</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 resumenes"> <!--Video-Resumen de 2025-->
+                    <h4>RESUMEN DEL AÑO 2025</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/2025.jpg" alt="Resumen anual 2025" title="Resumen anual 2025"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtu.be/Yi5oGVpaUCw?si=CGYaLBcJFCH1v97Y" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Video</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 reviews"> <!--Videos de review a Milfshakes x Vicio-->
+                    <h4>MILFSHAKES x VICIO</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/milfshkesxvicio.jpg" alt="Milfshakes x Vicio" title="Milfshakes x Vicio"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtu.be/-69J-r_XS8I?si=trOinmp0AfliOaYT" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Video</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 reviews"> <!--Videos de review a Turrones de Peldanyos-->
+                    <h4>SUGARPAPI DROP 003</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/turrones-peldanyos.jpg" alt="SugarPapi Drop 003" title="SugarPapi Drop 003"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtu.be/x82H03eAmoE?si=10pPC6hqT8RF2g6N" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Video</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12 reviews"> <!--Pelicula del Layton-->
+                    <h4>REACCIÓN A PROFESOR LAYTON, LA DIVA ETERNA</h4>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <img src="img/blogs/layton.jpg" alt="Pelicula del Layton" title="Pelicula del Layton"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <p>(colocar aqui experiencia de Peri)</p>
+                            <a href="https://youtu.be/HU7Vih6wvEY?si=44im8S-LNXjB_j5q" target="_blank">
+                                <button type="button" class="btn btn-dark">Ver Video</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="botones-paginacion"></div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="container-fluid">
+            <p> &copy; 2026 Pericuus_AB. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
